@@ -7,6 +7,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/marcellmartini/aocclt/cmd/apply"
+	"github.com/marcellmartini/aocclt/cmd/config"
 	"github.com/marcellmartini/aocclt/cmd/get"
 )
 
@@ -21,6 +22,7 @@ coding experience during the Advent of Code event`,
 
 func addSubcommands() {
 	rootCmd.AddCommand(apply.CmdApply)
+	rootCmd.AddCommand(config.CmdConfig)
 	rootCmd.AddCommand(get.CmdGet)
 }
 
