@@ -26,6 +26,10 @@ func GetPuzzle(url string) {
 	utils.SaveFile(puzzle)
 }
 
+func GetExample(url string) {
+	fmt.Println(getElement(url, exampleElement))
+}
+
 func getElement(url string, selector string) (string, error) {
 	if url == "" {
 		return "", nil // TODO: check if url is empty and return a error
