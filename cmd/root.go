@@ -6,6 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/marcellmartini/aocclt/cmd/get"
 )
 
 var rootCmd = &cobra.Command{
@@ -18,6 +19,7 @@ coding experience during the Advent of Code event`,
 }
 
 func addSubcommands() {
+	rootCmd.AddCommand(get.CmdGet)
 }
 
 func init() {
